@@ -27,3 +27,15 @@ ln -s $PWD/.gitconfig $HOME/.gitconfig
 ```bash
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ```
+
+## latex
+
+```bash
+ln -s $PWD/.latexmkrc $HOME/.latexmkrc
+```
+
+## marp
+
+```bash
+ln -s $PWD/.marprc.yml $HOME/.marprc.yml
+```
