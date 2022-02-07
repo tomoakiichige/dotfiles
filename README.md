@@ -21,3 +21,9 @@ nvim -es -u ~/.config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"
 ```bash
 ln -s ./.gitconfig ~/.gitconfig
 ```
+
+## tmux
+
+```bash
+ln -s ./.tmux.conf ~/.tmux.conf
+```
