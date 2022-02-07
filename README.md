@@ -3,8 +3,8 @@
 ## vim, nvim
 
 ```bash
-ln -s ./.vimrc ~/.vimrc
-ln -s ./nvim ~/.config/nvim
+ln -s $PWD/.vimrc $HOME/.vimrc
+ln -s $PWD/nvim $HOME/.config/nvim
 
 # install vim-plug
 # https://github.com/junegunn/vim-plug#unix-linux
@@ -19,11 +19,11 @@ nvim -es -u ~/.config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"
 ## git
 
 ```bash
-ln -s ./.gitconfig ~/.gitconfig
+ln -s $PWD/.gitconfig $HOME/.gitconfig
 ```
 
 ## tmux
 
 ```bash
-ln -s ./.tmux.conf ~/.tmux.conf
+ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ```
