@@ -1,0 +1,42 @@
+[user]
+	name = Tomoaki Ichige
+	email = ichigetomoaki1207@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	sb = status -sb
+	c = commit
+	cm = commit -m
+	ca = commit --amend
+	cam = commit --amend -m
+	graph = log --graph
+	sp = stash pop
+	ss = stash save
+	sl = stash list
+	sa = stash apply
+	sd = stash drop
+	su = stash -u
+	b = branch
+	bm = branch -m
+	bd = branch -d
+	bdd = branch -D
+	ba = branch -a
+	sw = switch
+	swc = switch -c
+	co = checkout
+	cancel = reset --soft HEAD^
+	a = add
+	ap = add -p
+	unstage = restore --staged
+	f = fetch
+	fp = !git fetch --prune && git branch -a
+	p = !git push origin `git rev-parse --abbrev-ref HEAD`
+	mo = !git merge origin/`git rev-parse --abbrev-ref HEAD`
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
