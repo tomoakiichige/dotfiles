@@ -5,6 +5,7 @@
 ```bash
 ln -s $PWD/.vimrc $HOME/.vimrc
 ln -s $PWD/nvim $HOME/.config/nvim
+ln -s $PWD/.vimrc $HOME/.ideavimrc
 
 # install vim-plug
 # https://github.com/junegunn/vim-plug#unix-linux
