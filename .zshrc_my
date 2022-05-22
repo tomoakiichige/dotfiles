@@ -7,6 +7,8 @@ alias s='sail'
 alias saa='sail artisan'
 alias d='docker'
 alias npmr='npm run'
+alias man='env LANG=C man'
+alias jman='env LANG=ja_JP.UTF-8 man'
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
