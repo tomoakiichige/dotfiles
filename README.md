@@ -20,7 +20,8 @@ nvim -es -u ~/.config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"
 ## git
 
 ```bash
-ln -s $PWD/.gitconfig $HOME/.gitconfig
+cp $PWD/.gitconfig.example $HOME/.gitconfig
+cp $PWD/.gitconfig.user.example $HOME/.gitconfig.user
 ```
 
 ## tmux
