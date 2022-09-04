@@ -42,9 +42,9 @@ set list
 set listchars=tab:»-,trail:·
 set backspace=indent,eol,start
 set expandtab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=0
+set softtabstop=-1
+set tabstop=4
 set clipboard+=unnamed
 set autoindent
 set smartindent
