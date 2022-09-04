@@ -1,5 +1,11 @@
 # dotfiles
 
+## zsh
+
+```
+source ${ZDOTDIR:-$HOME}/.zshrc_my
+```
+
 ## vim, nvim
 
 ```bash
