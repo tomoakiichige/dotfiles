@@ -24,6 +24,7 @@ if has('nvim')
   Plug 'easymotion/vim-easymotion', Cond(!exists('g:vscode'))
   Plug 'asvetliakov/vim-easymotion', Cond(exists('g:vscode'), { 'as': 'vsc-easymotion' })
   Plug 'tpope/vim-surround'
+  Plug 'cohama/lexima.vim'
 
   call plug#end()
 
