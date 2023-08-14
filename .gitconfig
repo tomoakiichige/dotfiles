@@ -28,7 +28,6 @@
 	unstage = restore --staged
 	f = fetch
 	fp = !git fetch --prune && git branch -a
-	p = !git push origin `git rev-parse --abbrev-ref HEAD`
 	mo = !git merge origin/`git rev-parse --abbrev-ref HEAD`
 [init]
 	defaultBranch = main
