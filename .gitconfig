@@ -29,6 +29,7 @@
 	f = fetch
 	fp = !git fetch --prune && git branch -a
 	mo = !git merge origin/`git rev-parse --abbrev-ref HEAD`
+    autosquash = rebase -i --autosquash
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -38,3 +39,5 @@
 	smudge = git-lfs smudge -- %f
 [push]
 	autoSetupRemote = true
+[fetch]
+    prune = true
