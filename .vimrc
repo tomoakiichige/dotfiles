@@ -26,6 +26,9 @@ if has('nvim')
   Plug 'tpope/vim-surround'
   Plug 'cohama/lexima.vim'
 
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
+
   call plug#end()
 
   " plugin config
@@ -36,11 +39,15 @@ if has('nvim')
   nnoremap <silent><C-e> :NERDTreeToggle<CR>
   set background=dark
   colorscheme hybrid
+
+  lua <<EOF
+require('gitsigns').setup()
+EOF
 endif
 
 set number
 set list
-set listchars=tab:»-,trail:·
+set listchars=tab:»-,trail:·,space:·
 set backspace=indent,eol,start
 set expandtab
 set shiftwidth=0
