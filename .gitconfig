@@ -29,10 +29,10 @@
 	f = fetch
 	fp = !git fetch --prune && git branch -a
 	mo = !git merge origin/`git rev-parse --abbrev-ref HEAD`
-    autosquash = rebase -i --autosquash
+	autosquash = rebase -i --autosquash
 	cof = !git branch -a | fzf --height=10 | xargs git checkout
-    show-graph = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
-    swf = !zsh -i -c 'git-fuzzy-switch'
+	show-graph = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	swf = !zsh -i -c 'git-fuzzy-switch'
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -43,4 +43,6 @@
 [push]
 	autoSetupRemote = true
 [fetch]
-    prune = true
+	prune = true
+[pager]
+	branch = false
